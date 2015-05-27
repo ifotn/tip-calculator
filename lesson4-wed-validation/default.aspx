@@ -16,7 +16,7 @@
         <form id="form1" runat="server" class="form-horizontal">
             <h1>Tip Calculator</h1>
             <h4>Bill Details</h4>
-            <div class="form-group">
+            <div>
                 <label for="txtAmount">Amount:</label>
                 <asp:TextBox ID="txtAmount" runat="server" required AutoCompleteType="Disabled" />
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
@@ -27,7 +27,7 @@
                     Type="Double" MinimumValue="0.01" MaximumValue="1000" Display="Dynamic"
                     CssClass="label label-danger"></asp:RangeValidator>
             </div>
-            <div class="form-group">
+            <div>
                 <label for="ddlPercent">Tip %:</label>
                 <asp:DropDownList ID="ddlPercent" runat="server">
                     <asp:ListItem Value=".1" Text="10%"></asp:ListItem>
